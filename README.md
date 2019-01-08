@@ -22,6 +22,6 @@ Considering this:
 4- Connect to your VM and get into the vagrant directory \
 ```$ cd / & cd /vagrant ``` 
 
-5- Then, run:
+5- Then, run: \
 ```$ python log-analysis-project.py ```
 
