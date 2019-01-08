@@ -7,7 +7,7 @@ Python 2 or 3.
 
 # Running the project
 According to the project's specification, only the python file needs to be submitted. \
-I'll assume that the project will be executed inside a virtual machine, managed by Vagrant and a ```Vagrantfile``` identical to that showed in the course.
+I assumed that the project would be executed inside a virtual machine, managed by Vagrant and a ```Vagrantfile``` identical to that showed in the course.
 
 Considering this:
 
