@@ -19,7 +19,7 @@ Considering this:
 
 3- Copy ```log-analysis-project.py``` and paste it into the vagrant directory inside your virtual machine.
 
-4- Connect to your VM and get into the vagrant directory \
+4- Connect to your VM and after it get into the vagrant directory: \
 ```$ cd / & cd /vagrant ``` 
 
 5- Then, run: \
