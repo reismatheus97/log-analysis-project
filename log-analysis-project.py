@@ -1,10 +1,15 @@
-#! /usr/bin python
+#!/usr/bin python
 
 import psycopg2
 from datetime import datetime
 
 DBNAME = "news"
-db = psycopg2.connect(database=DBNAME)
+
+try:
+    db = psycopg2.connect(database=DBNAME)
+except psycopg2.Error as e:
+    print ("Unable to connect to the database")
+    quit()
 
 
 def welcome():
@@ -45,7 +50,7 @@ def answer2():
     select authors.name, count(authors.id) as views
         from log, articles, authors
         where substr(log.path, 10) = articles.slug and
-                articles.author = authors.id 
+                articles.author = authors.id
         group by authors.id order by views desc;
     """)
     rows = cursor.fetchall()
@@ -61,15 +66,15 @@ def answer3():
     cursor.execute("""
         select
             to_date(day,'YYYY-MM-DD'),
-            round((TotalErrors*100)::decimal/(OnePercent*100),2) 
+            round((TotalErrors*100)::decimal/(OnePercent*100),2)
                 as Error_Percentage
-        from (select 
-                substr(to_char(date_trunc('day', time), 'YYYY-MM-dd'),1,10) 
+        from (select
+                substr(to_char(date_trunc('day', time), 'YYYY-MM-dd'),1,10)
                     as OnePercentDay,
                 count(*)/100
                     as OnePercent
                 from log group by 1) as a,
-            (select 
+            (select
                 substr(to_char(date_trunc('day', time), 'YYYY-MM-dd'),1,10)
                     as day,
                 count(*) as TotalErrors
