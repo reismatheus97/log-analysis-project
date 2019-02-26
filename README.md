@@ -7,7 +7,7 @@ This is an **internal reporting tool** that uses information from a database to 
 
 It analyzes a fictional newspaper site that is already running on and creating logs in a database when some page get accessed. 
 
-The solution is written using **Python** and **PostgreSQL**.  
+The solution was written using **Python** and **PostgreSQL**.  
 It explores basics concepts about:
 - Connections between an application and a database server
 - Querying and manipulating data (filtering, grouping, parsing)
@@ -23,7 +23,7 @@ These are the questions the reporting tool should answer:
 3. On which days did more than 1% of requests lead to errors? 
 
 # Requirements
-The project inside a virtual machine provided by [VirtualBox](https://www.virtualbox.org/) and managed by [Vagrant](https://www.vagrantup.com/)
+The project will run inside a virtual machine provided by [VirtualBox](https://www.virtualbox.org/) and managed by [Vagrant](https://www.vagrantup.com/)
 
 The ```Vagrantfile``` will be used to set the VM configuration. \
 With the VM built with this file and running up, we are ready to go. 
