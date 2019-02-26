@@ -1,13 +1,13 @@
 # log-analysis-project
-The third project into the Udacity's Full Stack Developer Nanodegree. \
-This isn't a commercial project and has only academic purposes. \
+The third project into the Udacity's Full Stack Developer Nanodegree.  
+This isn't a commercial project and has only academic purposes. 
 
 # About
-This is an **internal reporting tool** that uses information from a database to discover specific informations about users and they preference. \
+This is an **internal reporting tool** that uses information from a database to discover specific informations about users and they preference. 
 
-It analyzes a fictional newspaper site that is already running on and creating logs in a database when some page get accessed. \
+It analyzes a fictional newspaper site that is already running on and creating logs in a database when some page get accessed. 
 
-The solution is written using **Python** and **PostgreSQL**. \ 
+The solution is written using **Python** and **PostgreSQL**.  
 It explores basics concepts about:
 - Connections between an application and a database server
 - Querying and manipulating data (filtering, grouping, parsing)
@@ -17,10 +17,10 @@ It explores basics concepts about:
 - Error handling
 
 # Proposed questions
-These are the questions the reporting tool should answer: \
-1. What are the most popular three articles of all time? \
-2. Who are the most popular article authors of all time? \
-3. On which days did more than 1% of requests lead to errors? \
+These are the questions the reporting tool should answer: 
+1. What are the most popular three articles of all time? 
+2. Who are the most popular article authors of all time? 
+3. On which days did more than 1% of requests lead to errors? 
 
 # Requirements
 The project inside a virtual machine provided by [VirtualBox](https://www.virtualbox.org/) and managed by [Vagrant](https://www.vagrantup.com/)
@@ -49,6 +49,6 @@ The ```newsdata.sql``` file provided by Udacity. Download [link](https://d17h27t
 5- Set the data:
 ```psql -d news -f newsdata.sql```
 
-5- Then, run: \
+6- Then, run: \
 ```$ python log-analysis-project.py ```
 
